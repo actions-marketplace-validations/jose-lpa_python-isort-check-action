@@ -1,0 +1,19 @@
+# action.yml
+name: 'Python linters isort check'
+description: 'GitHub action to run isort checks on your python repository'
+branding:
+  icon: 'snake'
+  color: 'black'
+inputs:
+  path:
+    description: 'File or directory to run isort on.'
+    required: false
+    default: '.'
+outputs:
+  output:
+    description: 'The output of isort.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
