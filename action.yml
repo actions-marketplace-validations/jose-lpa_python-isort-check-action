@@ -9,6 +9,10 @@ inputs:
     description: 'File or directory to run isort on.'
     required: false
     default: '.'
+  settings-path:
+    description: 'Path of the settings file to be used by isort.'
+    required: false
+    default: '.'
 outputs:
   output:
     description: 'The output of isort.'
@@ -17,3 +21,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.path }}
+    - ${{ inputs.settings-path }}

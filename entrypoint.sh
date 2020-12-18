@@ -1,4 +1,4 @@
 #!/bin/sh
 set -eax
 
-isort -rc -c $1
+isort --check $1 --settings-path $2
