@@ -2,7 +2,7 @@
 name: 'Python linters isort check'
 description: 'GitHub action to run isort checks on your python repository'
 branding:
-  icon: 'snake'
+  icon: 'align-justify'
   color: 'black'
 inputs:
   path:
